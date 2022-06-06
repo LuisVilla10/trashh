@@ -1,0 +1,37 @@
+body{
+    background-color: #5a7b99;
+    font-family: cursive;
+}
+.tituloH1{
+    font-size: 5em;
+    text-shadow: 5px 5px 5px #00000069;
+    color: #384553;
+    margin-bottom: 10px;
+    cursor:default;
+}
+.LoginBox{
+    background-color: #8eafcf;
+    border-radius: 50px;
+    box-shadow: 4px 10px 5px #00000040;
+    text-align: center;
+    margin: 5% 5%;
+}
+.visually-hidden{
+    display: none;
+}
+
+h2 {
+    text-align: left;
+    color: #384553;
+    font-size: 3.5em;
+    margin-left: 10%;
+    margin-bottom:0;    
+}
+
+p {
+    text-align: left;
+    margin-left: 10%;
+    color: #384553;
+    font-size: 18px;
+    
+}

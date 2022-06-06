@@ -1,0 +1,4 @@
+.welcome {
+	opacity: 100;
+	transition: opacity .3s ease-in 0s;
+}

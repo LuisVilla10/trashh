@@ -1,0 +1,279 @@
+/*
+*	SIZE
+*
+*/
+
+/* Width 80% */
+.w-80pc {
+	width: 80%;
+}
+
+/* Height 0px */
+.h-0px {
+	height: 0px;
+}
+
+/* Height 100% */
+.h-100pc {
+	height: 100%;
+}
+
+.h-90pc {
+	height: 95%;
+}
+
+.h-80vh {
+	height: 80vh;
+}
+
+.margn-left-d5rem {
+	margin-left: .5rem;
+}
+
+.margn-right-d2rem {
+	margin-right: .2rem;
+}
+
+.margn-down-d5rem {
+	margin-bottom: .5rem;
+}
+
+.padng-lft-1rem {
+	padding-left: 1rem;
+}
+
+/*
+*	GRID
+*
+*/
+.g {
+	display: grid;
+}
+
+.g-temp-rows-5-95 {
+	grid-template-rows: 5% 95%;
+}
+
+.g-temp-rows-6-94 {
+	grid-template-rows: 6% 94%;
+}
+
+/*
+*	POSITIONS
+*
+*/
+
+.relative {
+	position: relative;
+}
+
+/*
+*	FLEXBOX
+*
+*/
+
+/* Flexbox display */
+.f {
+	display: flex;
+}
+
+.f-justify-center {
+	justify-content: center;
+}
+
+.f-justify-around {
+	justify-content: space-around;
+}
+
+/* Flexbox alignitems center */
+.f-align-center {
+	align-items: center;
+}
+
+.f-align-around {
+	align-items: space-around;
+}
+
+.f-align-end {
+	align-items: flex-end;
+}
+
+/* Flexbox column */
+.f-column {
+	flex-flow: column;
+}
+
+/* Flexbox centered */
+.f-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.f-grow {
+	flex-grow: 1;
+}
+
+/*
+*	FONT
+*
+*/
+
+/* Font size 18 */
+.font-18 {
+	font-size: 20px;
+}
+
+/* Font size 22 */
+.font-22 {
+	font-size: 22px;
+}
+
+/* Font size 22 */
+.font-24 {
+	font-size: 24px;
+}
+
+/* Font size 28 */
+.font-28 {
+	font-size: 28px;
+}
+
+/* Font size 55 */
+.font-55 {
+	font-size: 55px;
+}
+
+/* Font weight bold */
+.font-bold {
+	font-weight: bold;
+}
+
+/*
+*	FONT COLORS
+*
+*/
+
+/* Font color */
+.white {
+	color: #fafafa;	
+}
+
+.font-light-light-gray {
+	color: #d8d8de;
+}
+
+/* Font light gray */
+.font-light-gray {
+	color: #c5c5cd;
+}
+
+/* Font color Dark Gray */
+.font-dark-gray {
+	color: #8C8C91;
+}
+
+/*
+*	LINK TAG
+*
+*/
+
+/* Remove line */
+.no-line {
+	text-decoration: none;
+}
+
+/*
+*	BORDERS
+*
+*/
+
+/* No border */
+.no-border {
+	border: none;
+}
+
+.border-r-5 {
+	border-radius: 5px;
+}
+
+.border-r-10 {
+	border-radius: 10px;
+}
+
+.border-r-15 {
+	border-radius: 15px;
+}
+
+/*
+*	BACKGROUND COLORS
+*
+*/
+
+/* light gray */
+.bg-light-gray {
+	background-color: #c5c5cd;
+}
+
+.bg-light-light-gray {
+	background-color: #d8d8de;
+}
+
+/* Purple Gradient */
+.purp-grad {
+	background: rgb(209,113,243);
+	background-image: linear-gradient(160deg, rgba(209,113,243,1) 0%, rgba(135,96,243,1) 100%);
+}
+
+/*
+*	SCROLLBAR
+*
+*/
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #fafafa;        /* color of the tracking area */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d8d8de;
+  border-radius: 20px;
+  border: 2px solid #fafafa;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  border: 2px solid #d8d8de;
+}
+
+/*
+*	SPECIAL
+*
+*/
+
+/* Always normal cursor */
+.normal-cursor {
+	cursor: default;
+}
+
+/* Transition background color */
+.bg-tran-d2 {
+    transition: all .2s ease-out 0s;
+}
+
+.a-tran-d2-in {
+    transition: all .15s ease-out 0s;
+}
+
+.display-none {
+	display: none;
+}
+
+.overflow-auto {
+	overflow: auto;
+}
+
+.overflow-none {
+	overflow: hidden;
+}

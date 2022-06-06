@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/recover-pass.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/misc.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.ico">
+    <title>Iniciar sesión en TI Support</title>
+</head>
+<body>
+    <div class="container f f-center">
+        <div class="LoginBox border-r-5 f f-column f-center ">
+            <h2 class="margn-down-d5rem">Recuperación de contraseña</h2>
+            <form  action="" onsubmit="return false;" id="form-recuperar" method="POST">
+                <div class="" id="contenedor">
+                    <p class="margn-down-d5rem">Ingrese su correo, un código de recuperación será enviado</p>
+                    <div class="entrada margn-down-d5rem">
+                        <div class="alert visually-hidden" id="alerta"></div>
+                    </div>
+                    <div class="entrada margn-down-d5rem f f-center">
+                        <input  name="correo" type="email" pattern="[^@\s]+@[^@\s]+.[^@\s]+" class="entrada" id="correo" name="email">
+                    </div>
+                </div>
+                <label for="submit" class="margn-down-d5rem"></label>
+                <div class="btn-container f f-center f-justify-around">
+                    <button class="btn-volver" onclick="loadLogin()">Volver al Login</button>
+                    <input type="submit" onclick="validarCorreo()" id="submit" name="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/js/recuperarContrasela.js"></script>
+    <!-- <script src="src/js/main.js"></script> -->
+</body>
+</html>

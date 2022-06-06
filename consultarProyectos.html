@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header class="header-title">
+        <h1>Solsoft</h1>
+    </header>
+    <div class="bienvenida-label">
+        <div class="bienvenida-content">
+            <h2>Bievenido</h2>
+            <h2 id="nombre-usuario"></h2>
+            <small><a href="/src/php/functions/close-session.php" class="btn btn-close btn-selected" >Cerrar sesión</a></small>
+        </div>
+    </div>
+    <menu id="menu-acciones">
+        
+    </menu>
+    <section>
+        <header>
+          
+            <nav class="nav">
+                <ul class="nav__list" id="ul_list">
+                    <li id="LiContainsMis" class="btn-solo"><a onclick="intercambiar(this)" class="btn btn-selected btn-section" id="btn-mis-proyectos">Mis proyectos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="section-content" >
+          <div id="contenedor-proyectos"></div>
+        <!-- Termina sección de proyectos -->
+            <div class="acotations visually-hidden" id="allStatus">
+                <div class="project-status acotation">
+                    <span class="status-en-diseño"></span>
+                    <p>Diseño</p>
+                </div>
+                <div class="project-status acotation">
+                    <span class="status-en-desarrollo"></span>
+                    <p>Desarrollo</p>
+                </div>
+                <div class="project-status acotation">
+                    <span class="status-en-pruebas"></span>
+                    <p>Pruebas</p>
+                </div>
+                <div class="project-status acotation">
+                    <span class="status-implementado"></span>
+                    <p>Implementado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/fillDrafts.js"></script>
+</body>
+</html>

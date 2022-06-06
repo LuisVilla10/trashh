@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/misc.css">
+    <link rel="stylesheet" href="src/css/login.css">
+    <link rel="shortcut icon" href="/src/assets/favicon.ico">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="f h-100pc">
+                <div class="logo f f-center">
+                    <span class="font-dark-gray font-24 font-bold">TI Support</span>
+                </div>
+            </nav>
+        </header>
+        <div class="grid-2-3">
+            <div class="f f-center">
+                <div class="alert visually-hidden" id="alerta"></div>
+            </div>
+            <div class="f f-center" style="grid-column: 2/3">
+                <div class="LoginBox">
+                    <header class="f f-center">
+                        <span class="font-dark-gray font-bold font-28">Login</span>
+                    </header>
+                    <div class="separator f f-align-center">
+                        <hr/>
+                        <span class="font-dark-gray">TIS</span>
+                        <hr/>
+                    </div>
+                    <div class="form">
+                        <form action="./src/php/functions/saveSession.php" id="form-login" method="POST" class="f f-column h-100pc f-align-center">
+                            <input class="logn-input font-dark-gray font-18 w-80pc" name="correo" type="email" pattern="[^@\s]+@[^@\s]+.[^@\s]+" id="emailInput" name="email" placeholder="Usuario">
+                            <input class="logn-input font-dark-gray font-18 w-80pc" type="password" id="passwordInput" name="password" placeholder="Contraseña">
+                            <button id="login-button" class="logn-btn purp-grad no-border font-22 white" type="submit">Login</button>
+                        </form>
+                    </div>
+                    <div class="f f-justify-center">
+                        <a class="no-line font-dark-gray" href="/recuperar-contraseña.html">
+                            <span>¿Olvidaste la contraseña?</span>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="f f-center">
+                <span class="welcome font-55 font-bold font-dark-gray">Welcome</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/login.js"></script>
+</body>
+</html>

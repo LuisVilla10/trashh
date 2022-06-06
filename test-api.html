@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/assets/favicon.ico">
+    <title>TEST API</title>
+</head>
+<body>
+    <div class="api-container">
+        <div class="api-form">
+            <form action="" onsubmit="return false">
+                <div class="form-head">
+                    <label for="url-input"></label>
+                    <input style="width:300px" name="url-input" id="url-input" placeholder="www.ejemplo.com">
+                    <label for="method-input"></label>
+                    <select name="method-input" id="method-input">
+                        <option value="POST">POST</option>
+                        <option value="GET">GET</option>
+                    </select>
+                    <input type="submit" value="SEND" onclick="sendRequest()">
+                </div>
+                <div class="form-body">
+                    <label for="json-input">Contenido de la solicitud (JSON)</label>
+                    <br>
+                    <textarea name="json-input" id="json-input" cols="60" rows="10" style="resize: none" placeholder='{"key" : "value"}'></textarea>
+                </div>
+
+            </form>
+            <button onclick="addAtribute()">Añadir atributo +</button>
+            <button onclick="limpiar()">Limpiar</button>
+        </div>
+        <div class="api-response">
+            <h3>Respuesta</h3>
+            <label for="status-output">Status: </label><span id="status-output" class=""></span><br>
+            <textarea name="response-output" id="response-output" cols="120" rows="10" style="resize: none" placeholder="response" value=""></textarea>            
+            <button onclick="limpiarOutput()">Limpiar</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/js/test-api.js"></script>
+</body>
+</html>

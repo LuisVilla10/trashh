@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header class="header-title">
+        <h1>Solsoft</h1>
+    </header>
+    <div class="bienvenida-label">
+        <div class="bienvenida-content">
+            <h2>Bievenido</h2>
+            <h2>Jorge Campos</h2>
+            <small><a onclick="hacerAlgo()" class="btn btn-close btn-selected" >Cerrar sesión</a></small>
+        </div>
+    </div>
+    <menu>
+        <a onclick="hacerAlgo()" class="btn-selected btn btn-menu">Proyectos</a>
+        <a onclick="hacerAlgo()" class="btn btn-menu">Fallos</a>
+        <a onclick="hacerAlgo()" class="btn btn-menu">Clientes</a>
+        <a onclick="hacerAlgo()" class="btn btn-menu">Empleados</a>
+    </menu>
+    <section>
+        <header>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a onclick="hacerAlgo()" class="btn btn-selected btn-section">Mis proyectos</a></li>
+                    <li><a onclick="hacerAlgo()" class="btn btn-section">Todos los proyetcos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="section-content">
+            <!-- Inicia sección donde van todos los proyectos -->
+
+            <!-- <div class="project-card">
+                <p>No hay proyectos que mostrar</p>
+            </div> -->
+
+            <div class="project-card">
+                <div class="project-title">Proyecto a</div>
+                <div class="project-body">
+                    <div class="project-status"><span class="status-en-diseño"></span></div>
+                    <div class="project-data">
+                        <div class="project-owner">
+                            <h4>Cliente: </h4>
+                            <p>Pedro López</p>
+                        </div>
+                        <div class="project-owner">
+                            <h4>Contratación: </h4>
+                            <p>01-10-21</p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a onclick="hacerAlgo()" class="btn btn-details">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Proyecto b</div>
+                <div class="project-body">
+                    <div class="project-status"><span class="status-implementado"></span></div>
+                    <div class="project-data">
+                        <div class="project-owner">
+                            <h4>Cliente: </h4>
+                            <p>Joaquín Yañes</p>
+                        </div>
+                        <div class="project-owner">
+                            <h4>Contratación: </h4>
+                            <p>01-10-21</p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a onclick="hacerAlgo()" class="btn btn-details">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Proyecto c</div>
+                <div class="project-body">
+                    <div class="project-status"><span class="status-en-desarrollo"></span></div>
+                    <div class="project-data">
+                        <div class="project-owner">
+                            <h4>Cliente: </h4>
+                            <p>Joaquín Yañes</p>
+                        </div>
+                        <div class="project-owner">
+                            <h4>Contratación: </h4>
+                            <p>01-10-21</p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a onclick="hacerAlgo()" class="btn btn-details">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Proyecto d</div>
+                <div class="project-body">
+                    <div class="project-status"><span class="status-en-pruebas"></span></div>
+                    <div class="project-data">
+                        <div class="project-owner">
+                            <h4>Cliente: </h4>
+                            <p>Joaquín Yañes</p>
+                        </div>
+                        <div class="project-owner">
+                            <h4>Contratación: </h4>
+                            <p>01-10-21</p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a onclick="hacerAlgo()" class="btn btn-details">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Termina sección de proyectos -->
+            <div class="acotations">
+                <div class="project-status acotation">
+                    <span class="status-en-diseño"></span>
+                    <p>Diseño</p>
+                </div>
+                <div class="project-status acotation">
+                    <span class="status-en-desarrollo"></span>
+                    <p>Desarrollo</p>
+                </div>
+                <div class="project-status acotation">
+                    <span class="status-en-pruebas"></span>
+                    <p>Pruebas</p>
+                </div>
+                <div class="project-status acotation">
+                    <span class="status-implementado"></span>
+                    <p>Implementado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

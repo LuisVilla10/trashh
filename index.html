@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/assets/favicon.ico">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/misc.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/css/icons.css">
+    <!-- Javascript -->
+    <script src="src/js/templates.js"></script>
+    <script src="src/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-title normal-cursor">
+            <!-- Hamburguer Menu -->
+            <div class="ham-menu f-align-center h-100pc bg-tran-d2 display-none">
+                <span class="material-icons md-48 md-light">menu</span>
+                <div class="ham-menu-panel h-0px display-none bg-tran-d2"></div>
+            </div>
+            <!-- Logo -->
+            <span class="logo font-22 font-light-gray">TI Support</span>
+            <!-- User Menu -->
+            <div class="user-menu-label f f-align-center border-r-5">
+                <span id="nombre-usuario" class="font-22 font-light-gray font-bold"></span>
+                <div class="profile-sq border-r-10 purp-grad"></div>
+                <div class="test-menu border-r-10">
+                    <ul class="font-light-gray font-18">
+                        <li class="user-data f f-center bg-tran-d2">
+                            <span class="material-icons md-24 md-light margn-right-d2rem">person</span>
+                            <span>Usuario</span>
+                        </li>
+                        <li>
+                            <a class="f f-center bg-tran-d2 h-100pc normal-cursor font-light-gray" href="src/php/functions/close-session.php">
+                                <span class="material-icons md-24 md-light margn-right-d2rem">logout</span>
+                                <span>Salir</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="f f-justify-center f-align-end">
+            <section class="g g-temp-rows-5-95 w-80pc h-90pc border-r-10 overflow-none">
+                <header>
+                    <nav class="nav">
+                        <ul class="nav__list h-100pc" id="ul_list">
+                            <li id="LiContainsMis" class="btn-solo">
+                                <a onclick="intercambiar(this)" class="btn btn-selected btn-section" id="btn-mis-proyectos">Mis proyectos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="section-content g g-temp-rows-5-95" >
+                    <div class="acotations visually-hidden" id="allStatus">
+                        <div class="project-status acotation">
+                            <span class="status-en-diseno"></span>
+                            <p>Diseño</p>
+                        </div>
+                        <div class="project-status acotation">
+                            <span class="status-en-desarrollo"></span>
+                            <p>Desarrollo</p>
+                        </div>
+                        <div class="project-status acotation">
+                            <span class="status-en-pruebas"></span>
+                            <p>Pruebas</p>
+                        </div>
+                        <div class="project-status acotation">
+                            <span class="status-implementado"></span>
+                            <p>Implementado</p>
+                        </div>
+                    </div>
+                    <div id="contenedor-proyectos" class="overflow-auto scrollbar">
+                        <div class="entrada">
+                            <div class="alert main-alert visually-hidden" id="main-alert"><p>Prueba de alerta</p></div>
+                        </div>
+                        <!-- aquí van los proyectos -->
+                    </div>
+                </div>
+            </section>
+            <div id="modal-container">
+            </div>                     
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/cliente.js"></script>
+    <script src="src/js/fillDrafts.js"></script>
+    <script src="src/js/fallos.js"></script>
+    <script src="src/js/addProyecto.js"></script>
+    <script src="src/js/empleado.js"></script>
+    <script src="src/js/updateProyecto.js"></script>
+    <script src="src/js/addEmpleado.js"></script>
+    <script src="src/js/addCliente.js"></script>
+</body>
+</html>
